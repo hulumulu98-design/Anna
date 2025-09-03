@@ -219,12 +219,12 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif text == "💎 Купить подписку":
             # Отправляем информацию о подписке несколькими сообщениями
             subscription_messages = [
-                "💎 <b>Премиум подписка</b>",
-                "• 🗣️ Неограниченное общение",
-                "• 💾 Сохранение истории", 
-                "• ⚡ Приоритетная обработка",
-                "• 🎁 Эксклюзивные функции",
-                "Стоимость: 299 руб./месяц 💫",
+                "💎 <b>Премиум подписка</b>"
+                "• 🗣️ Неограниченное общение"
+                "• 💾 Сохранение истории" 
+                "• ⚡ Приоритетная обработка"
+                "• 🎁 Эксклюзивные функции"
+                "Стоимость: 299 руб./месяц 💫"
                 "Напиши @dirtydonny для оформления! 😊"
             ]
             
@@ -237,9 +237,9 @@ async def handle_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif text == "💬 Написать сообщение":
             # Отправляем приглашение несколькими сообщениями
             invitation_messages = [
-                "Отлично! 💫",
-                "Я слушаю тебя... 👂",
-                "Расскажи мне что-нибудь! 💖",
+                "Отлично! 💫"
+                "Я слушаю тебя... 👂"
+                "Расскажи мне что-нибудь! 💖"
                 "О чем хочешь поговорить? 😊"
             ]
             
@@ -280,10 +280,10 @@ async def profile(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Отправляем информацию о профиле несколькими сообщениями
         profile_messages = [
-            f"👤 <b>Твой профиль</b>",
-            f"📛 Имя: {profile_data['full_name'] or 'Не указано'}",
+            f"👤 <b>Твой профиль</b>"
+            f"📛 Имя: {profile_data['full_name'] or 'Не указано'}"
             f"📅 Регистрация: {created_date}",
-            f"📨 Сообщений: {profile_data['message_count']}",
+            f"📨 Сообщений: {profile_data['message_count']}"
             f"💎 <b>Статус:</b> {'✅ Активна' if has_active_subscription else '❌ Не активна'}"
         ]
         
@@ -364,4 +364,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
